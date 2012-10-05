@@ -6,8 +6,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'tumblog.views.home', name='home'),
-    # url(r'^tumblog/', include('tumblog.foo.urls')),
+    url(r'^$', 'tumblog.views.home', name='home'),
+    url(r'^tumblog/', include('tumblog.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
