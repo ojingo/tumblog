@@ -124,6 +124,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 )
 
+# local settings importer - IF no file then it passes
+# use for settings locally and different for when published
 try:
     from local_settings import *
 except ImportError:
